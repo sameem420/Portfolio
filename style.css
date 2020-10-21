@@ -1,11 +1,13 @@
 body {
+    box-sizing: border-box;
     font-family: 'Dosis', sans-serif;
     color: white;
-    animation: loader 5s;
-    
+    animation: loader 2s;
 }
 main {
-  background: url(https://serving.photos.photobox.com/23831723b5e651e8ea16cd2216cb3c7400315d33c9c59fa7b3e662cb8698b88c4534825a.jpg); 
+  background-image: url(./assets/images/bg.jpg);
+  background-repeat:no-repeat;
+  background-size: cover;
   position: relative;
 }
 main:before {
@@ -15,17 +17,16 @@ main:before {
  height: 100%;
  background: linear-gradient(150deg, rgba(107, 11, 197,0.9),rgba(255, 139, 178,0.9));
  transition: opacity 0.5s 1s;
- opacity: 0.9;
+ opacity: 0.7;
 }
 main:hover:before {
   opacity: 0;
 }
 
 .container{
-    width: 1100px;
+    width: border-box;
     height: 100%;
-    margin-right: auto;
-    margin-left: auto;
+    margin: auto;
     position: relative;
     z-index: 2;
 }
@@ -34,26 +35,26 @@ main:hover:before {
   display: table;
   clear: both;
 }
-  
 .left-column {
     font-size: 20px;
-    width: 399px;
+    width: 50%;
     float: left;
     margin-left: 100px;
     margin-top: 150px;
+    color: whitesmoke;
 }
 .right-column {
-    height: auto;
-    width: auto;
+    width: border-box;
     margin-right: 200px;
     margin-top: 200px;
-    overflow: hidden;
+    /* overflow: hidden; */
     float:right;
 }
 #img-profile {
-    border-radius: 50%;
+    border-radius: 80%;
     max-width: 100%;
     margin: auto;
+    background: rgba(110, 122, 111, 0.3);
 }
 hr {
     background-color: red;
