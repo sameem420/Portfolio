@@ -25,7 +25,8 @@ body {
 }
 #img-profile {
     border-radius: 80%;
-    max-width: 100%;
+    max-width: 200px;
+    max-height: 200px;
     margin: auto;
     background: rgba(110, 122, 111, 0.3);
 }
@@ -52,16 +53,15 @@ button {
 }
 
 @media only screen and (max-width: 550px) {
-    /* .right-col {
-        border: 1px solid green;
-        box-sizing: border-box;
-        text-align: center;
-    } */
+    body {
+        overflow: hidden;
+    }
     #img-profile {
-        border-radius: 80%;
+        border-radius: 50%;
         max-width: 100px;
-        margin: -100px 10px 0px 0px;
+        max-height: 100px;
+        margin: -120px 10px 0px 0px;
         float: right;
-        background: rgba(233, 113, 113, 0.3);
+        background: rgba(110, 122, 111, 0.3);
     }
   }
